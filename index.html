@@ -1,0 +1,53 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quinto Nivel Radio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+  <script src="player.js" defer></script>
+</head>
+<body>
+  <div class="player-container">
+    <div class="player-card">
+      <div class="artwork-container">
+        <img id="trackArtwork" src="https://static.wixstatic.com/media/c2529b_78874bdb2dc641bcbdaa2d6c71b9026e~mv2.png" alt="Quinto Nivel Radio">
+      </div>
+      
+      <div class="track-info">
+        <h2 class="track-title fade-transition" id="trackTitle">Quinto Nivel Radio</h2>
+        <p class="track-artist fade-transition" id="trackArtist">Transmitiendo en vivo</p>
+        <p class="track-description fade-transition" id="trackDescription">Tu música favorita 24/7</p>
+      </div>
+
+      <div class="player-controls">
+        <button id="playButton" class="control-button">
+          <svg class="play-icon" viewBox="0 0 24 24">
+            <path d="M8 5v14l11-7z"/>
+          </svg>
+          <svg class="pause-icon" viewBox="0 0 24 24">
+            <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+          </svg>
+        </button>
+        <div class="player-info">
+          <h3>Radio Quinto Nivel</h3>
+          <div class="status-indicator">
+            <span id="statusText">Conectando...</span>
+            <div class="loading-dots">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+        <div class="volume-control">
+          <input type="range" id="volumeSlider" min="0" max="100" value="80">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
